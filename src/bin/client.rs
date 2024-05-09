@@ -20,7 +20,7 @@ async fn main() -> Result<(), tokio_websockets::Error> {
                 match incoming {
                     Some(Ok(msg)) => {
                         if let Some(text) = msg.as_text() {
-                            println!("Server: {}", text);
+                            println!("Alin - Server: {}", text);
                         }
                     },
                     Some(Err(err)) => return Err(err.into()),
